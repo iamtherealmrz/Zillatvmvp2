@@ -1,59 +1,51 @@
 body {
   background-color: #1a1a1a;
-  color: #e0e0e0;
-  font-family: monospace;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 #tv-container {
   position: relative;
-  width: 800px;
-  height: 650px;
+  width: 768px;
+  height: 768px;
 }
 #tv-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 #screen {
   position: absolute;
-  top: 85px;
-  left: 100px;
-  width: 568px;
-  height: 345px;
+  top: 100px;
+  left: 60px;
+  width: 648px;
+  height: 360px;
   background-color: black;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 #status-text {
   color: #adff2f;
-  font-size: 1.2em;
-}
-#controls {
-  position: absolute;
-  bottom: 30px;
-  left: 60px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-#slider-track {
-  width: 600px;
+  font-size: 1.2rem;
+  font-family: monospace;
 }
 #slider-knob {
   position: absolute;
-  bottom: 95px;
-  left: 115px;
-  width: 30px;
+  bottom: 135px;
+  left: 95px;
+  width: 32px;
+  height: auto;
   cursor: pointer;
+}
+#buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 135px;
+  display: flex;
+  gap: 160px;
 }
 #skip-button, #pause-button {
   width: 170px;
-  height: auto;
   cursor: pointer;
 }
