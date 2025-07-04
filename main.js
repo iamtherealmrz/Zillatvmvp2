@@ -22,7 +22,7 @@ function playCurrentTrack() {
   audioPlayer.play();
   isPaused = false;
   statusText.textContent = "Now Playing: " + track.split('/').pop();
-  sliderKnob.style.left = (rancidLevel === "low") ? "95px" : "620px";
+  sliderKnob.style.left = (rancidLevel === "low") ? "0px" : "528px";
 }
 
 function skipTrack() {
